@@ -1,4 +1,10 @@
 #include <stdio.h>
+/* Binary Search can be performed on a sorted array.
+It works by repeatedly dividing the search interval in half.
+If the value of the search key is less than the item in the middle of the interval,
+narrow the interval to the lower half. Otherwise, narrow it to the upper half.
+Repeatedly check until the value is found or the interval is empty.
+*/
 int binarySearch(int arr[], int n, int x)
 {
     int low = 0, high = n - 1;
