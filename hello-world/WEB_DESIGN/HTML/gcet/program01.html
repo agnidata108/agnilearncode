@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Galgotias College</title>
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+body{
+background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+color:white;
+}
+/* Header */
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 50px;
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(10px);
+}
+.logo{
+display:flex;
+align-items:center;
+font-size:30px;
+font-weight:bold;
+}
+.logo img{
+width:60px;
+margin-right:10px;
+}
+input{
+padding:10px 15px;
+width:250px;
+border:none;
+border-radius:30px;
+outline:none;
+}
+/* Hero Section */
+.hero{
+text-align:center;
+padding:80px 20px;
+}
+.hero h1{
+font-size:55px;
+color:#FFD700;
+}
+.hero p{
+margin-top:15px;
+font-size:20px;
+}
+button{
+margin-top:25px;
+padding:12px 30px;
+border:none;
+border-radius:30px;
+background:#FFD700;
+color:black;
+font-size:18px;
+cursor:pointer;
+}
+/* Branch Cards */
+.container{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+padding:40px;
+}
+.card{
+width:220px; background:rgba(255,255,255,0.12);
+border-radius:20px;
+padding:25px;
+text-align:center;
+transition:.4s;
+}
+.card:hover{
+transform:scale(1.08);
+background:#FFD700;
+color:black;
+}
+.card h2{
+margin-bottom:10px;
+}
+/* Faculty Table */
+.faculty{
+width:90%;
+margin:auto;
+background:white;
+color:black;
+border-radius:15px;
+padding:20px;
+}
+.faculty h2{
+text-align:center;
+margin-bottom:20px;
+}
+table{
+width:100%;
+border-collapse:collapse;
+}
+th{
+background:#003366;
+color:white;
+padding:12px;
+}
+td{
+padding:12px;
+border-bottom:1px solid #ddd;
+text-align:center;
+}
+tr:hover{
+background:#f2f2f2;
+}
+/* Footer */
+footer{
+margin-top:40px;
+background:black;
+text-align:center;
+padding:20px;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">
+<img src="phelosophy.jpeg">
+Galgotias College of Engineering and Technology
+</div>
+<input type="text" placeholder="Search...">
+</header>
+<div class="hero">
+<h1>WELCOME TO GALGOTIAS COLLEGE</h1>
+<p>Learn • Innovate • Achieve</p>
+<button>Explore Campus</button>
+</div>
+<div class="container">
+<div class="card">
+<h2>CSE</h2>
+<p>Computer Science & Engineering</p>
+</div>
+<div class="card">
+<h2>IT</h2>
+<p>Information Technology</p>
+</div>
+<div class="card">
+<h2>AI & ML</h2>
+<p>Artificial Intelligence & Machine Learning</p>
+</div>
+<div class="card">
+<h2>ECE</h2>
+<p>Electronics & Communication Engineering</p>
+</div>
+</div>
+<div class="faculty">
+<h2>Faculty Details</h2>
+<table>
+<tr>
+<th>Name</th>
+<th>Department</th>
+</tr>
+<tr>
+<td>Dr. A. Kumar</td>
+<td>CSE</td> </tr>
+<tr>
+<td>Dr. N. Sharma</td>
+<td>IT</td>
+</tr>
+<tr>
+<td>Dr. R. Verma</td>
+<td>ECE</td> </tr>
+<tr>
+<td>Dr. P. Singh</td>
+<td>EE</td> </tr>
+<tr>
+<td>Dr. V. Mishra</td> <td>ME</td> </tr>
+</table>
+</div>
+<footer>
+© 2026 Galgotias College of Engineering & Technology
+</footer>
+</body>
+</html>

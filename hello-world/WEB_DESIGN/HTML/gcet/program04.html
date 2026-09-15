@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Cart</title>
+    <style>         body {             font-family: Arial, sans-serif;             margin: 20px;             text-align: center;         }
+        h1 {             font-size: 40px;             margin-bottom: 25px;         }
+        table {             width: 100%;             border-collapse: collapse;             margin: auto;         }
+        th, td {             border: 1px solid black;             padding: 12px;             text-align: center;         }
+        th {             font-size: 18px;         }
+        td {             font-size: 16px;         }
+        img {             width: 90px;             height: 120px;             object-fit: cover;         }
+        .quantity button {             padding: 5px 10px;             font-size: 16px;
+        }
+        .add-cart {             padding: 8px 18px;             font-size: 16px;             background-color: white;             border: 1px solid black;             cursor: pointer;         }
+        .total-row td {             font-weight: bold;             font-size: 20px;         }
+    </style>
+</head>
+<body>
+    <h1>My Cart</h1>
+    <table>
+        <tr>
+            <th>Cover Page</th>
+            <th>Book Title</th>
+            <th>Author Name</th>
+            <th>Publisher</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total Price</th>
+            <th>Action</th>
+        </tr>
+        <tr>             <td><img src="book1.jpeg"The Alchemist"></td>
+            <td><b>The Alchemist</b></td>
+            <td>Paulo Coelho</td>
+            <td>HarperOne</td>
+            <td>$2.99</td>
+            <td class="quantity">
+                <button>-</button>
+                <span> 1 </span>                 <button>+</button>
+            </td>
+            <td>$2.99</td>
+            <td><button class="add-cart">Add to Cart</button></td>
+        </tr>
+        <tr>             <td><img src="book2.jpeg" alt="Atomic Habits"></td>
+            <td><b>Atomic Habits</b></td>
+            <td>James Clear</td>
+            <td>Penguin</td>
+            <td>$3.99</td>
+            <td class="quantity">
+                <button>-</button>
+                <span> 1 </span>                 <button>+</button>
+            </td>
+            <td>$3.99</td>
+            <td><button class="add-cart">Add to Cart</button></td>
+        </tr>
+        <tr>             <td><img src="book3.jpeg" alt="Ikigai"></td>
+            <td><b>Ikigai</b></td>             <td>Héctor García and Francesc Miralles</td>
+            <td>Random House</td>
+            <td>$3.49</td>
+            <td class="quantity">
+                <button>-</button>
+                <span> 1 </span>                 <button>+</button>
+            </td>
+            <td>$3.49</td>
+            <td><button class="add-cart">Add to Cart</button></td>
+        </tr>
+        <tr>             <td><img src="book4.jpg" alt="Think Like a Monk"></td>
+            <td><b>Think Like a Monk</b></td>
+            <td>Jay Shetty</td>
+            <td>HarperCollins</td>
+            <td>$3.49</td>
+            <td class="quantity">
+                <button>-</button>
+                <span> 1 </span>                 <button>+</button>
+            </td>
+            <td>$3.49</td>
+            <td><button class="add-cart">Add to Cart</button></td>
+        </tr>
+        <tr>             <td><img src="book5.jpeg" alt="The Lean Startup"></td>
+            <td><b>The Lean Startup</b></td>
+            <td>Eric Ries</td>
+            <td>Crown Business</td>
+            <td>$4.49</td>
+            <td class="quantity">
+                <button>-</button>
+                <span> 1 </span>                 <button>+</button>
+            </td>
+            <td>$4.49</td>
+            <td><button class="add-cart">Add to Cart</button></td>
+        </tr>
+        <tr class="total-row">
+            <td colspan="6">Total</td>
+            <td>■1,895</td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html> 

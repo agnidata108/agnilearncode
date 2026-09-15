@@ -1,0 +1,32 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+   }   
+   html, body{
+    height: 100%;
+    width: 100%;
+   }
+   body{
+    background-color: #8a9c13;
+   }
+   #box1{
+    background-color: #461a6d;
+    height: 300px;    
+    width: 300px;  
+    border-radius: 50%;
+
+    border: 2px solid #b81919;  
+   }
+   #box2{
+    background-color: #cac4cf;
+    height: 300px;
+    width: 330px;
+    border-radius: 10px;
+    border: 2px solid #b81986;
+   }
+   h1{
+    color: #02332c;
+    text-align: center;
+    padding-top: 20px;
+   }

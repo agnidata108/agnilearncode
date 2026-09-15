@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        body{
+            background-color: azure;
+        }
+        .hero{
+            align-items: center;
+        }
+    </style>
+
+    <script>
+        function validateForm() {
+
+            // Get values
+            let name = document.getElementById("name").value;
+            let password = document.getElementById("password").value;
+
+            // Name validation
+            let namePattern = /^[A-Za-z]+$/;
+
+            if (name.length < 6) {
+                alert("Name should contain at least 6 characters.");
+                return false;
+            }
+
+            if (!namePattern.test(name)) {
+                alert("Name should contain alphabets only.");
+                return false;
+            }
+
+            // Password validation
+            if (password.length < 6) {
+                alert("Password should contain at least 6 characters.");
+                return false;
+            }
+
+            alert("Registration Successful!");
+            return true;
+        }
+    </script>
+</head>
+
+
+<body>
+    <div class="hero"> <h2>Registration Form</h2>
+
+    <form onsubmit="return validateForm()">
+
+        <label>Name:</label>
+        <input type="text" id="name" name="name">
+        <br><br>
+
+        <label>Password:</label>
+        <input type="password" id="password" name="password">
+        <br><br>
+
+        <input type="submit" value="Register"></div>
+
+   
+
+    </form>
+</div>
+</body>
+</html>

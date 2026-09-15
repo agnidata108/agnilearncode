@@ -1,0 +1,49 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+   display: flex;
+   ALIGN-ITEMS: center;
+   JUSTIFY-CONTENT: center;
+}
+.shape{
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 200px;
+    width: 200px;   
+    border: 1px solid #120303f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#square:hover{
+    background-color: red;
+    
+}
+#circle:hover{
+    background-color: green;
+   
+}
+#circle{
+    border-radius: 50%;
+}
+#daimond:hover{
+    background-color: blue;
+    
+}
+#daimond{
+    transform: rotate(45deg);
+    margin-top: 50px;
+    
+}
+#daimond h1{
+    transform: rotate(-45deg);
+}

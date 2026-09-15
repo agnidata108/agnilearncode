@@ -1,0 +1,45 @@
+#heading{
+    color: violet;
+}
+#hed{
+    color: yellowgreen;
+}
+p{
+    color: rebeccapurple;
+}
+.special_heading{
+    color: aquamarine;
+}
+#first{
+    color: rgb(175, 116, 116);
+    background: #f5d9d9;
+}
+#second{
+    color: coral; 
+    background: #bacae7;
+}
+button{
+    color: rgb(10, 20, 20);
+}
+    #first{
+height: 50px;
+width: 50PX;    
+background-image:url(myntra.jpg);
+background-size: contain;
+background-repeat: no-repeat;
+
+    }
+
+#box1{
+    height: 50px;
+    width: 50px;
+    color: cornflowerblue;
+    background: #7454d52e;
+    
+}
+#box2{
+      height: 50px;
+    width: 50px;
+    color: rgb(19, 89, 221);
+    background: #2db8f42e;
+}

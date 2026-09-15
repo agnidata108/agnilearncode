@@ -1,0 +1,336 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+
+    background: #111;
+    color: white;
+
+    font-family: Arial, sans-serif;
+
+    padding: 40px 20px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: auto;
+
+    text-align: center;
+}
+
+
+/* MAIN HEADING */
+
+h1 {
+    font-size: 55px;
+
+    letter-spacing: 6px;
+
+    margin-bottom: 15px;
+
+    text-shadow:
+        0 0 10px white,
+        0 0 25px #aaa;
+}
+
+.intro {
+    max-width: 850px;
+
+    margin: 0 auto 40px;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    color: #bbb;
+}
+
+
+/* MAIN CARD */
+
+.taj-card {
+    width: 100%;
+
+    display: flex;
+
+    background: #1b1b1b;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    border: 1px solid #333;
+
+    box-shadow:
+        0 0 25px rgba(255,255,255,0.12);
+
+    margin-bottom: 40px;
+}
+
+.taj-card img {
+    width: 50%;
+
+    min-height: 500px;
+
+    object-fit: cover;
+
+    transition: 0.5s;
+}
+
+.taj-card img:hover {
+    transform: scale(1.04);
+}
+
+.content {
+    width: 50%;
+
+    padding: 40px;
+
+    text-align: left;
+}
+
+.content h2 {
+    font-size: 36px;
+
+    margin-bottom: 20px;
+}
+
+.content > p {
+    color: #ccc;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+
+/* FACT BOXES */
+
+.facts {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+
+    margin-top: 25px;
+}
+
+.fact {
+    padding: 15px;
+
+    background: #252525;
+
+    border-radius: 10px;
+
+    border: 1px solid #333;
+
+    transition: 0.3s;
+}
+
+.fact:hover {
+    transform: translateY(-5px);
+
+    background: #303030;
+
+    box-shadow: 0 0 15px rgba(255,255,255,0.1);
+}
+
+.fact h3 {
+    font-size: 16px;
+
+    margin-bottom: 7px;
+}
+
+.fact p {
+    color: #aaa;
+
+    font-size: 14px;
+}
+
+
+/* INFORMATION SECTIONS */
+
+.info-section {
+    background: #1b1b1b;
+
+    padding: 35px;
+
+    margin-bottom: 30px;
+
+    border-radius: 18px;
+
+    border: 1px solid #333;
+
+    text-align: left;
+
+    box-shadow: 0 0 20px rgba(255,255,255,0.06);
+}
+
+.info-section h2 {
+    font-size: 30px;
+
+    margin-bottom: 20px;
+
+    text-align: center;
+}
+
+.info-section p {
+    color: #ccc;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+}
+
+
+/* SPECIAL FEATURES */
+
+.features {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+.feature {
+    background: #252525;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    border: 1px solid #333;
+
+    transition: 0.3s;
+}
+
+.feature:hover {
+    transform: translateY(-6px);
+
+    background: #303030;
+
+    box-shadow: 0 0 20px rgba(255,255,255,0.12);
+}
+
+.feature h3 {
+    margin-bottom: 10px;
+
+    font-size: 19px;
+}
+
+.feature p {
+    margin: 0;
+
+    font-size: 14px;
+}
+
+
+/* INTERESTING FACTS */
+
+.facts-list {
+    padding-left: 25px;
+}
+
+.facts-list li {
+    color: #ccc;
+
+    font-size: 16px;
+
+    line-height: 2;
+
+    margin-bottom: 5px;
+}
+
+
+/* BACK BUTTON */
+
+.back-btn {
+    display: inline-block;
+
+    margin: 15px 0 30px;
+
+    padding: 14px 25px;
+
+    background: #333;
+
+    color: white;
+
+    text-decoration: none;
+
+    border: 1px solid #666;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: white;
+
+    color: black;
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 0 20px white;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+    .taj-card {
+        flex-direction: column;
+    }
+
+    .taj-card img {
+        width: 100%;
+
+        min-height: 350px;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+}
+
+
+@media (max-width: 500px) {
+
+    .facts {
+        grid-template-columns: 1fr;
+    }
+
+    .info-section {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+
+        letter-spacing: 3px;
+    }
+}
